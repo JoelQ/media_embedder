@@ -44,6 +44,6 @@ module MediaEmbedder
       end
     end
 
-    Dir[File.expand_path("app/models/resources/*.rb")].each { |file| require file }
+    # Dir[File.expand_path("app/models/resources/*.rb")].each { |file| require file }
   end
 end
