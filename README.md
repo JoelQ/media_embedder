@@ -1,5 +1,7 @@
 # MediaEmbedder
-`media_embedder` is a simple and easily extendible solution to parsing URLs in a string and replacing them with the proper media embed code. For example, a link to youtube would be converted to an HTML embed of that video.
+`media_embedder` is a simple and easily extendible solution to parsing URLs in
+a string and replacing them with the proper media embed code. For example, a
+link to youtube would be converted to an HTML embed of that video.
 
 MediaEmbedder comes with the following out of the box:
 * Images (png, gif, jpg)
@@ -16,8 +18,8 @@ or add the following line to your Gemfile
 gem 'media_embedder'
 ```
 
-## Usage
-To use MediaEmbedder in your project simply create a new instance of `MediaEmbedder::Parser` and call the `parse_links` method on it.
+## Usage To use MediaEmbedder in your project simply create a new instance of
+`MediaEmbedder::Parser` and call the `parse_links` method on it.
 
 ```ruby
   text = 'Check out this awesome cat picture! http://image.com/cat.gif'
@@ -27,10 +29,12 @@ To use MediaEmbedder in your project simply create a new instance of `MediaEmbed
 ```
 
 ## Extending with your own processors
-MediaEmbedder was designed to be exendable and it is really easy to add your own strategy for embedding a particular type of media. You need to create a class that does the following:
-* Registers itself with `MediaEmbedder::Parser` on load
-* Implements the `can_process_url?` method which returns true or false
-* Implements the `to_html` method which will return the desired HTML code to embed the media
+MediaEmbedder was designed to be exendable and it is really easy to add your
+own strategy for embedding a particular type of media. You need to create a
+class that does the following:
+* Registers itself with `MediaEmbedder::Parser` on load Implements the
+* `can_process_url?` method which returns true or false Implements the
+* `to_html` method which will return the desired HTML code to embed the media
 
 Below is a very simple processor for images:
 ```ruby
