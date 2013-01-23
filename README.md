@@ -32,9 +32,9 @@ gem 'media_embedder'
 MediaEmbedder was designed to be exendable and it is really easy to add your
 own strategy for embedding a particular type of media. You need to create a
 class that does the following:
-* Registers itself with `MediaEmbedder::Parser` on load Implements the
-* `can_process_url?` method which returns true or false Implements the
-* `to_html` method which will return the desired HTML code to embed the media
+* Registers itself with `MediaEmbedder::Parser` on load
+* Implements the `can_process_url?` method which returns true or false 
+* Implements the `to_html` method which will return the desired HTML code to embed the media
 
 Below is a very simple processor for images:
 ```ruby
