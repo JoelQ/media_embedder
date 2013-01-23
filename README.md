@@ -18,7 +18,8 @@ or add the following line to your Gemfile
 gem 'media_embedder'
 ```
 
-## Usage To use MediaEmbedder in your project simply create a new instance of
+## Usage To use MediaEmbedder 
+In your project simply create a new instance of
 `MediaEmbedder::Parser` and call the `parse_links` method on it.
 
 ```ruby
