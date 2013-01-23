@@ -40,4 +40,8 @@ describe MediaEmbedder::Parser do
     parser.parse_links.should eq 'Check out this awesome pic! <a href="http://www.image.com/">http://www.image.com/</a> . I think you will really enjoy'
     object.text.should eq 'Check out this awesome pic! http://www.image.com/ . I think you will really enjoy'
   end
+
+  it 'has a list of resources' do
+    MediaEmbedder::Parser.resources.should_not be_empty
+  end
 end
